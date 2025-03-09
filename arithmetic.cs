@@ -6,9 +6,9 @@ public class Arithmetic{
 
     public void arithmetic(){
         Console.WriteLine("Enter the first number: ");
-        int a = Convert.ToDoube(Console.ReadLine());
+        int a = Convert.ToInt(Console.ReadLine());
         Console.WriteLine("Enter the second number: ");
-        int b = Convert.ToDouble(Console.ReadLine());
+        int b = Convert.ToInt(Console.ReadLine());
         int sum = a + b;
         int diff = a - b;
         int prod = a * b;
