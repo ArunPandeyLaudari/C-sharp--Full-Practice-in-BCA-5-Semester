@@ -1,6 +1,7 @@
 using System;
 
-class Base{
+class Base
+{
     public virtual void Display()
     {
         Console.WriteLine("Base class Display method.");
@@ -9,17 +10,20 @@ class Base{
 
 class Derived : Base
 {
-    public sealed override void Display()
+
+    public  override void Display()
     {
+       base.Display();
         Console.WriteLine("Derived class Display method.");
     }
+   
 }
 
-class Derived2:Derived{
-    public override void Display()
+class Test
+{
+    static void Main(string[] args)
     {
-        Console.WriteLine("Derived2 class Display method.");
+        Base b = new Derived();
+        b.Display(); // Calls the overridden method in Derived class
     }
 }
-
-
